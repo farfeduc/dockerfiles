@@ -14,7 +14,11 @@ Feel free to reuse or submit pull request.
 As usual, just do (after downloading all the files in the folder webstack) : 
 
 `docker build -t farfeduc/webstack .`
+ 
+or 
 
+`docker build -t farfeduc/webstack ./webstack/`
+(if you are not in the folder where the Dockerfile is)
 
 ## Run
 
