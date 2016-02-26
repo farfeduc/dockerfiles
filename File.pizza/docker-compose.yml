@@ -1,0 +1,4 @@
+file_pizza:
+  image: farfeduc/file-pizza
+  ports:
+    - "3000:3000"

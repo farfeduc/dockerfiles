@@ -1,0 +1,8 @@
+web:
+  build: ./webstack/
+  ports:
+    - "127.0.0.1:80:80"
+    - "127.0.0.1:443:443"
+  volumes:
+    - ./www:/www
+    - ./sites-enabled:/sites-enabled

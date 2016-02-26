@@ -1,0 +1,11 @@
+wekan-db:
+  image: mongo
+wekan:
+  image: mquandalle/wekan
+  links:
+    - wekan-db:db
+  environment:
+    - MONGO_URL=mongodb://db
+    - ROOT_URL=http://localhost
+  ports:
+    - "127.0.0.1:80:80"
